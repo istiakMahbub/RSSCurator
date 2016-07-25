@@ -1,1 +1,31 @@
+.text-input {
+  border: 1px solid #e6e6e6;
+  border-radius: 0;
+  font-family: "Fakt","AvenirNext-Medium","Segoe UI",sans-serif;
+  font-size: 14px;
+  height: 50px;
+  margin: -2px;
+  padding: 10px;
+  width: 400px;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+.sign-up-form table{
+    margin-top: 250px;  
+}
+.submit {
+    margin-top: 30px;
+    background-color:#0099CC;
+    color: white;  
+    border: #0099CC;
+}
+body{
+    background-color: #E7E7E7;
+  /*  background-image: url("images/pencils-762555_1920.jpg");
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; */
+} 
