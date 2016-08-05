@@ -13,22 +13,23 @@
     box-sizing: border-box;
 }
 
-.sign-up-form table{
-    margin-top: 150px;  
+.signUP{
+   margin-top: 150px;
 }
 .submit {
     margin-top: 30px;
     background-color:#0099CC;
-    color: white;  
+    color: white;
     border: #0099CC;
 }
 body{
-    background-color: #E7E7E7;
-  /*  background-image: url("images/pencils-762555_1920.jpg");
-    background-size:     cover;                     
+  text-align: center;
+    /*background-color: #E7E7E7;
+    background-image: url("images/pencils-762555_1920.jpg");
+    background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center; */
-} 
+}
 .login p{
   font-family: "Fakt","AvenirNext-Medium","Segoe UI",sans-serif;
   font-size: 14px;
@@ -43,4 +44,111 @@ body{
   margin: -2px;
   padding: 10px;
   width: 190px;
+}
+
+//hello
+
+
+.grid-container{
+     width: 100%;
+
+     box-sizing: border-box;
+ }
+.row{
+  padding: 15px 15px 15px 15px;
+
+
+}
+ -- our cleafix hack --
+ .row:before,
+ .row:after {
+     content:"";
+       display: table ;
+     clear:both;
+ }
+
+ [class*='col-'] {
+     float: left;
+     min-height: 250px;
+     width: 49%;
+     /*-- our gutter -- */
+     padding: 20px;
+     background-color: white;
+     margin-left: 15px;
+     position: relative;
+ }
+/*
+ .col-1{
+
+   width: 45%;
+
+ }
+ .col-2{
+
+   width: 50%;
+
+ }*/
+/* .col-3{ width: 50%;    }
+ .col-4{ width: 66.66%; }
+ .col-5{ width: 83.33%; }
+ .col-6{ width: 100%;   }*/
+
+ .outline, .outline *{
+  /*   outline: 1px solid #F6A1A1;*/
+ }
+
+ /*-- some extra column content styling --*/
+ [class*='col-'] > p {
+  background-color: white;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  color: black;
+ }
+.headline{
+  font-family: Segoe UI;
+  font-size: 1.8rem;
+
+
+}
+.timestamp{
+
+    position: absolute;
+    bottom: 10;
+}
+.excerpt{
+  font-family: segoe UI semilight;
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: 50;
+}
+.article{
+  display: block;
+
+
+
+
+}
+
+.article p{
+    margin: 0;
+
+}
+.article p:first-child::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+}
+
+.articleimages{
+
+align-items: center;
+
+}
+.articleimages img {
+  width: 25%;
+  height: auto;
+  float: left;
+
+  margin: 10px;
+
 }
