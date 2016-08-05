@@ -9,7 +9,10 @@
             echo "database not selected";
         }   
 
-        $email=$_POST['loginEmail'];
+        session_start();
+        if (isset($_POST['btnLogin']))
+        {
+            $email=$_POST['loginEmail'];
         $pass=$_POST['loginPass'];
 
        
@@ -18,12 +21,17 @@
         
         $srch= mysqli_fetch_array($result);
         if($srch['email']==$email && $srch['password']==$pass){
-            echo "Welcome ".$srch['email'];
+            
+            $_SESSION['valid'] = true;
+          $_SESSION['timeout'] = time();
+                  $_SESSION['email'] = $email;
+                  
+                  echo 'You have entered valid use name and password';
+            header('Location: setting.php');
         }
         else{
-            echo "login hoi nai ";
+            header('Location: register.php?login=false');
         }
-
-
+    }
  ?>
  
